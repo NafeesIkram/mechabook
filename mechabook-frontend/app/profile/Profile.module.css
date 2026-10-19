@@ -1,0 +1,772 @@
+.profilePage {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/* =========================
+   PROFILE HEADER
+========================= */
+
+.profileCard {
+  overflow: hidden;
+  background: #101017;
+  border: 1px solid #292933;
+  border-radius: 18px;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 245px;
+  overflow: hidden;
+  background: #15151d;
+}
+
+.coverImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.coverPlaceholder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(139, 92, 246, 0.22),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(167, 139, 250, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #11111a,
+      #171722 50%,
+      #0d0d13
+    );
+}
+
+.coverPattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent 48%,
+      rgba(255, 255, 255, 0.08) 49%,
+      rgba(255, 255, 255, 0.08) 51%,
+      transparent 52%
+    );
+  background-size: 34px 34px;
+}
+
+/* =========================
+   PROFILE MAIN
+========================= */
+
+.profileMain {
+  position: relative;
+  padding: 0 28px 25px;
+}
+
+.avatarWrapper {
+  position: relative;
+  width: 116px;
+  height: 116px;
+  margin-top: -58px;
+  margin-bottom: 14px;
+}
+
+.avatar,
+.avatarFallback {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  border: 5px solid #101017;
+  display: block;
+}
+
+.avatar {
+  object-fit: cover;
+  background: #181821;
+}
+
+.avatarFallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #5b21b6
+  );
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.avatarCamera {
+  position: absolute;
+  right: 1px;
+  bottom: 5px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #101017;
+  border-radius: 50%;
+
+  background: #252531;
+  color: #e8e8ee;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.avatarCamera:hover {
+  background: #8b5cf6;
+  color: white;
+}
+
+.profileActions {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+}
+
+.editButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 14px;
+
+  border: 1px solid #33333e;
+  border-radius: 10px;
+
+  background: #181821;
+  color: #e8e8ee;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.editButton:hover {
+  background: #22222c;
+  border-color: #4a4a58;
+}
+
+.profileInfo {
+  max-width: 720px;
+}
+
+.nameLine {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.nameLine h1 {
+  margin: 0;
+  color: #f5f5f7;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 750;
+}
+
+.starBadge {
+  width: 22px;
+  height: 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.handle {
+  margin: 5px 0 0;
+  color: #777783;
+  font-size: 14px;
+}
+
+.bio {
+  margin: 14px 0 0;
+  color: #d5d5dc;
+  font-size: 14px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 12px;
+
+  color: #858591;
+  font-size: 13px;
+}
+
+.location svg {
+  color: #8b5cf6;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-top: 20px;
+}
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.stat strong {
+  color: #f5f5f7;
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.stat span {
+  color: #858591;
+  font-size: 13px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.contentCard {
+  margin-top: 18px;
+
+  background: #101017;
+  border: 1px solid #292933;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+
+  padding: 5px;
+
+  border-bottom: 1px solid #292933;
+  background: #0d0d13;
+}
+
+.tab,
+.activeTab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-width: 120px;
+
+  padding: 11px 16px;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #858591;
+
+  font-size: 13px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.tab span,
+.activeTab span {
+  min-width: 20px;
+
+  padding: 2px 6px;
+
+  border-radius: 20px;
+
+  background: #1c1c25;
+
+  color: #858591;
+
+  font-size: 11px;
+}
+
+.tab:hover {
+  background: #17171f;
+  color: #e8e8ee;
+}
+
+.activeTab {
+  background: #8b5cf6;
+  color: white;
+}
+
+.activeTab span {
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+}
+
+.tabContent {
+  padding: 22px;
+}
+
+/* =========================
+   POSTS
+========================= */
+
+.postGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.postCard {
+  overflow: hidden;
+
+  background: #15151d;
+  border: 1px solid #292933;
+  border-radius: 14px;
+
+  transition: 0.2s ease;
+}
+
+.postCard:hover {
+  border-color: #3a3a47;
+  transform: translateY(-1px);
+}
+
+.postImage {
+  width: 100%;
+  height: 250px;
+
+  display: block;
+
+  object-fit: cover;
+
+  background: #08080d;
+}
+
+.postBody {
+  padding: 14px;
+}
+
+.postBody p {
+  margin: 8px 0 0;
+
+  color: #d8d8df;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.keyboardTag {
+  display: inline-flex;
+
+  padding: 5px 8px;
+
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 7px;
+
+  background: rgba(139, 92, 246, 0.1);
+
+  color: #b8a2ff;
+
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-top: 11px;
+}
+
+.tags span {
+  color: #8d8d99;
+  font-size: 11px;
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 14px;
+  padding-top: 12px;
+
+  border-top: 1px solid #282832;
+
+  color: #72727e;
+  font-size: 11px;
+}
+
+/* =========================
+   SOUND TESTS
+========================= */
+
+.soundGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.soundCard {
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px;
+
+  background: #15151d;
+  border: 1px solid #292933;
+  border-radius: 14px;
+
+  transition: 0.2s ease;
+}
+
+.soundCard:hover {
+  border-color: #3a3a47;
+}
+
+.soundIcon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+
+  border-radius: 10px;
+
+  background: rgba(139, 92, 246, 0.12);
+  color: #a78bfa;
+}
+
+.soundInfo h3 {
+  margin: 0 0 9px;
+
+  color: #f1f1f4;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.soundInfo p {
+  margin: 5px 0;
+
+  color: #888894;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.soundInfo p strong {
+  color: #bdbdc6;
+}
+
+.description {
+  margin-top: 10px !important;
+  color: #b0b0ba !important;
+}
+
+.audio {
+  width: 100%;
+  height: 38px;
+
+  margin-top: 15px;
+}
+
+/* =========================
+   EMPTY / ERROR / LOADING
+========================= */
+
+.emptyState {
+  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+.emptyIcon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 14px;
+
+  border-radius: 14px;
+
+  background: #181821;
+  color: #8b5cf6;
+}
+
+.emptyState h3 {
+  margin: 0;
+
+  color: #e8e8ee;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.emptyState p {
+  max-width: 430px;
+
+  margin: 8px 0 0;
+
+  color: #777783;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.state {
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #858591;
+
+  text-align: center;
+}
+
+.state h3 {
+  margin: 5px 0 0;
+
+  color: #e8e8ee;
+
+  font-size: 16px;
+}
+
+.state p {
+  margin: 0;
+
+  max-width: 450px;
+
+  color: #777783;
+
+  font-size: 13px;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid #292933;
+  border-top-color: #8b5cf6;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+.errorIcon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.retryButton {
+  margin-top: 8px;
+
+  padding: 9px 15px;
+
+  border: 1px solid #393943;
+  border-radius: 9px;
+
+  background: #181821;
+  color: #e8e8ee;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.retryButton:hover {
+  background: #22222c;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .profilePage {
+    max-width: none;
+  }
+
+  .cover {
+    height: 210px;
+  }
+
+  .profileMain {
+    padding: 0 20px 22px;
+  }
+
+  .profileActions {
+    right: 20px;
+  }
+
+  .postGrid,
+  .soundGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover {
+    height: 170px;
+  }
+
+  .profileMain {
+    padding: 0 14px 20px;
+  }
+
+  .avatarWrapper {
+    width: 92px;
+    height: 92px;
+    margin-top: -46px;
+  }
+
+  .avatar,
+  .avatarFallback {
+    width: 92px;
+    height: 92px;
+  }
+
+  .avatarFallback {
+    font-size: 25px;
+  }
+
+  .avatarCamera {
+    width: 28px;
+    height: 28px;
+  }
+
+  .profileActions {
+    top: 16px;
+    right: 14px;
+  }
+
+  .editButton {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .nameLine h1 {
+    font-size: 21px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .contentCard {
+    margin-top: 14px;
+    border-radius: 14px;
+  }
+
+  .tabs {
+    overflow-x: auto;
+  }
+
+  .tab,
+  .activeTab {
+    min-width: auto;
+    flex: 1;
+    padding: 10px 9px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .tab svg,
+  .activeTab svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .tabContent {
+    padding: 14px;
+  }
+
+  .postImage {
+    height: 220px;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,4 @@
+'use client';
+import Link from 'next/link'; import {usePathname} from 'next/navigation'; import {Home,Compass,Plus,ShoppingBag,UserRound} from 'lucide-react';
+export function Topbar(){return <header className="topbar"><div className="topBrand"><span className="logo" style={{width:30,height:30}}>M</span>Mechabook</div><Link href="/profile"><div className="avatar" style={{width:32,height:32}}>YO</div></Link></header>}
+export function MobileNav(){const p=usePathname();return <nav className="mobileNav">{[['/',Home,'Home'],['/explore',Compass,'Explore'],['/marketplace',ShoppingBag,'Market'],['/profile',UserRound,'Profile']].map(([href,Icon,label])=><Link key={String(href)} href={String(href)} className={p===href?'active':''}><Icon size={20}/><span>{String(label)}</span></Link>)}<Link href="/" className="active"><Plus size={24}/><span>Post</span></Link></nav>}

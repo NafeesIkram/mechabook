@@ -1,0 +1,386 @@
+.page {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 28px;
+}
+
+.backButton:hover {
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(167, 139, 250, 0.12);
+  color: #a78bfa;
+  flex-shrink: 0;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #a78bfa;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.header p:last-child {
+  margin: 8px 0 0;
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+.header strong {
+  color: #d1d5db;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.section {
+  background: #111318;
+  border: 1px solid #252832;
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.sectionHeader {
+  margin-bottom: 24px;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.sectionHeader p {
+  margin: 6px 0 0;
+  color: #7f8796;
+  font-size: 13px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.field label {
+  color: #d8dbe2;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field label span {
+  color: #a78bfa;
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #2a2e38;
+  border-radius: 10px;
+  background: #0c0e12;
+  color: #ffffff;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.field input,
+.field select {
+  height: 46px;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #555b67;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.1);
+}
+
+.field small {
+  color: #646b78;
+  font-size: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.uploadBox {
+  min-height: 190px;
+  border: 1px dashed #383d49;
+  border-radius: 14px;
+  background: #0c0e12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.uploadBox:hover {
+  border-color: #a78bfa;
+  background: #101116;
+}
+
+.uploadBox input {
+  display: none;
+}
+
+.uploadIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(167, 139, 250, 0.1);
+  color: #a78bfa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.uploadBox strong {
+  color: #e5e7eb;
+  font-size: 14px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.uploadBox span {
+  margin-top: 5px;
+  color: #666d79;
+  font-size: 12px;
+}
+
+.audioPreview {
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid #292e38;
+  border-radius: 12px;
+  background: #0c0e12;
+}
+
+.audioPreview span {
+  display: block;
+  margin-bottom: 10px;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.audioPreview audio {
+  width: 100%;
+}
+
+.inputWithIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputWithIcon svg {
+  position: absolute;
+  left: 14px;
+  color: #777e8c;
+  pointer-events: none;
+}
+
+.inputWithIcon input {
+  padding-left: 42px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.primaryButton,
+.secondaryButton {
+  min-height: 42px;
+  border-radius: 10px;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primaryButton {
+  border: 1px solid #a78bfa;
+  background: #a78bfa;
+  color: #111318;
+}
+
+.primaryButton:hover {
+  background: #b69cff;
+}
+
+.secondaryButton {
+  border: 1px solid #2d323d;
+  background: #171a21;
+  color: #d1d5db;
+}
+
+.secondaryButton:hover {
+  background: #1c2028;
+}
+
+.notFound {
+  max-width: 700px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.notFound h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.successCard {
+  max-width: 620px;
+  margin: 80px auto;
+  padding: 45px 30px;
+  background: #111318;
+  border: 1px solid #252832;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.successIcon {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+}
+
+.successCard h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.successCard p {
+  margin: 12px 0 0;
+  color: #a1a7b2;
+  line-height: 1.6;
+}
+
+.successSubtext {
+  font-size: 13px;
+  color: #6f7683 !important;
+}
+
+.successActions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .section {
+    padding: 17px;
+    border-radius: 14px;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .successCard {
+    margin: 40px auto;
+    padding: 35px 20px;
+  }
+}

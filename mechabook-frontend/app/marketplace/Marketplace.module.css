@@ -1,0 +1,1049 @@
+.page {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 8px;
+
+  color: #8b5cf6;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.pageHeader h1 {
+  margin: 0;
+
+  color: #f5f5f7;
+
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+.pageHeader p {
+  margin: 9px 0 0;
+
+  color: #92929f;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sellButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 44px;
+  padding: 0 18px;
+
+  border: 1px solid #8b5cf6;
+  border-radius: 10px;
+
+  background: #8b5cf6;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.sellButton:hover {
+  background: #7c3aed;
+  border-color: #7c3aed;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 25px rgba(139, 92, 246, 0.2);
+}
+
+/* ============================================================
+   ERROR
+   ============================================================ */
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin-bottom: 20px;
+  padding: 13px 15px;
+
+  border: 1px solid #5b2932;
+  border-radius: 10px;
+
+  background: #211116;
+  color: #fca5a5;
+
+  font-size: 13px;
+}
+
+.error button {
+  border: 0;
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+/* ============================================================
+   TOOLBAR
+   ============================================================ */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 14px;
+}
+
+.searchBox {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  flex: 1;
+  min-height: 44px;
+
+  padding: 0 13px;
+
+  border: 1px solid #292933;
+  border-radius: 10px;
+
+  background: #101017;
+  color: #777783;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.searchBox:focus-within {
+  border-color: #5d3cb2;
+  background: #12121a;
+}
+
+.searchBox input {
+  width: 100%;
+  height: 42px;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+  color: #f5f5f7;
+
+  font-size: 13px;
+}
+
+.searchBox input::placeholder {
+  color: #666671;
+}
+
+.clearSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #25252e;
+  color: #aaaab4;
+
+  font-size: 17px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.clearSearch:hover {
+  background: #33333e;
+  color: #ffffff;
+}
+
+.filterButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  min-height: 44px;
+  padding: 0 14px;
+
+  border: 1px solid #292933;
+  border-radius: 10px;
+
+  background: #101017;
+  color: #c7c7d0;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.filterButton:hover {
+  border-color: #464653;
+  background: #15151d;
+  color: #ffffff;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.sortWrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  min-height: 44px;
+  padding: 0 11px;
+
+  border: 1px solid #292933;
+  border-radius: 10px;
+
+  background: #101017;
+  color: #888894;
+}
+
+.sortSelect {
+  min-height: 40px;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+  color: #cfcfd7;
+
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.sortSelect option {
+  background: #101017;
+  color: #f5f5f7;
+}
+
+/* ============================================================
+   FILTER PANEL
+   ============================================================ */
+
+.filterPanel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+
+  margin-bottom: 18px;
+  padding: 17px;
+
+  border: 1px solid #292933;
+  border-radius: 12px;
+
+  background: #101017;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterGroup label {
+  color: #888894;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.filterOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.filterOption,
+.activeFilter {
+  min-height: 32px;
+  padding: 0 11px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.filterOption {
+  border: 1px solid #30303a;
+
+  background: #15151d;
+  color: #9b9ba6;
+}
+
+.filterOption:hover {
+  border-color: #484853;
+  color: #ffffff;
+}
+
+.activeFilter {
+  border: 1px solid #6d43c7;
+
+  background: rgba(139, 92, 246, 0.14);
+  color: #b89bff;
+}
+
+.resetButton {
+  min-height: 34px;
+  padding: 0 12px;
+
+  border: 1px solid #30303a;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #92929f;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  border-color: #555561;
+  color: #ffffff;
+}
+
+/* ============================================================
+   RESULT BAR
+   ============================================================ */
+
+.resultBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 34px;
+  margin-bottom: 15px;
+
+  color: #777783;
+
+  font-size: 12px;
+}
+
+.resultBar strong {
+  color: #d8d8df;
+  font-weight: 700;
+}
+
+.resultBar button {
+  border: 0;
+  background: transparent;
+
+  color: #a78bfa;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.resultBar button:hover {
+  color: #c4b5fd;
+}
+
+/* ============================================================
+   GRID
+   ============================================================ */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+/* ============================================================
+   PRODUCT CARD
+   ============================================================ */
+
+.card {
+  display: block;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #292933;
+  border-radius: 13px;
+
+  background: #101017;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+
+  border-color: #454552;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.28);
+}
+
+/* ============================================================
+   IMAGE
+   ============================================================ */
+
+.imageContainer {
+  position: relative;
+
+  width: 100%;
+  height: 230px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #171720,
+      #0d0d13
+    );
+}
+
+.productImage {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.35s ease;
+}
+
+.card:hover .productImage {
+  transform: scale(1.035);
+}
+
+/* ============================================================
+   IMAGE FALLBACK
+   ============================================================ */
+
+.imageContainer :global(.marketplace-image-fallback) {
+  position: absolute;
+  inset: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  color: #555561;
+
+  font-size: 12px;
+}
+
+/* ============================================================
+   CONDITION BADGE — LEFT
+   ============================================================ */
+
+.conditionBadge {
+  position: absolute;
+
+  top: 11px;
+  left: 11px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 27px;
+
+  padding: 0 9px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius: 7px;
+
+  background:
+    rgba(8, 8, 13, 0.78);
+
+  backdrop-filter: blur(8px);
+
+  color: #eeeeF2;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   STATUS BADGE — RIGHT
+   ============================================================ */
+
+.statusBadge {
+  position: absolute;
+
+  top: 11px;
+  right: 11px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 27px;
+
+  padding: 0 9px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius: 7px;
+
+  background:
+    rgba(8, 8, 13, 0.78);
+
+  backdrop-filter: blur(8px);
+
+  color: #eeeeF2;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   ACTIVE
+   ============================================================ */
+
+.statusActive {
+  border-color:
+    rgba(74, 222, 128, 0.3);
+
+  background:
+    rgba(20, 83, 45, 0.78);
+
+  color: #86efac;
+}
+
+/* ============================================================
+   PENDING
+   ============================================================ */
+
+.statusPending {
+  border-color:
+    rgba(251, 191, 36, 0.3);
+
+  background:
+    rgba(120, 80, 10, 0.78);
+
+  color: #fcd34d;
+}
+
+/* ============================================================
+   SOLD
+   ============================================================ */
+
+.statusSold {
+  border-color:
+    rgba(248, 113, 113, 0.3);
+
+  background:
+    rgba(127, 29, 29, 0.78);
+
+  color: #fca5a5;
+}
+
+/* ============================================================
+   CARD BODY
+   ============================================================ */
+
+.cardBody {
+  padding: 15px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  margin-bottom: 7px;
+
+  color: #777783;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #f3f3f6;
+
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 700;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  display: -webkit-box;
+
+  overflow: hidden;
+
+  margin: 7px 0 0;
+
+  color: #858590;
+
+  font-size: 12px;
+  line-height: 1.55;
+
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.price {
+  margin-top: 13px;
+
+  color: #a78bfa;
+
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  min-width: 0;
+
+  margin-top: 11px;
+
+  color: #858590;
+
+  font-size: 11px;
+}
+
+.location span {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   SELLER
+   ============================================================ */
+
+.seller {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-top: 14px;
+  padding-top: 13px;
+
+  border-top: 1px solid #22222b;
+}
+
+.sellerAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #29233d,
+      #1c1b25
+    );
+
+  color: #b9a2f8;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.seller > div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  gap: 2px;
+}
+
+.seller span {
+  color: #6f6f7b;
+
+  font-size: 10px;
+}
+
+.seller strong {
+  overflow: hidden;
+
+  color: #b9b9c3;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  min-height: 360px;
+
+  padding: 40px;
+
+  border: 1px dashed #2d2d37;
+  border-radius: 14px;
+
+  background: #0d0d13;
+
+  text-align: center;
+}
+
+.emptyIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  margin-bottom: 17px;
+
+  border: 1px solid #292933;
+  border-radius: 14px;
+
+  background: #15151d;
+  color: #666672;
+}
+
+.emptyState h2 {
+  margin: 0;
+
+  color: #e4e4e8;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.emptyState p {
+  max-width: 400px;
+
+  margin: 8px 0 18px;
+
+  color: #777783;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.emptyButton {
+  min-height: 38px;
+
+  padding: 0 15px;
+
+  border: 1px solid #353540;
+  border-radius: 9px;
+
+  background: #15151d;
+  color: #bdbdc6;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.emptyButton:hover {
+  border-color: #50505c;
+
+  background: #1a1a23;
+  color: #ffffff;
+}
+
+/* ============================================================
+   LOADING
+   ============================================================ */
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  min-height: 60vh;
+
+  color: #777783;
+}
+
+.loadingState p {
+  margin-top: 14px;
+
+  font-size: 13px;
+}
+
+.loadingSpinner {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid #282831;
+  border-top-color: #8b5cf6;
+
+  border-radius: 50%;
+
+  animation:
+    marketplaceSpin 0.8s
+    linear infinite;
+}
+
+@keyframes marketplaceSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — TABLET
+   ============================================================ */
+
+@media (max-width: 1250px) {
+  .grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — SMALL TABLET
+   ============================================================ */
+
+@media (max-width: 950px) {
+  .grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .pageHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sellButton {
+    width: 100%;
+  }
+
+  .toolbar {
+    flex-wrap: wrap;
+  }
+
+  .searchBox {
+    flex-basis: 100%;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+  .page {
+    padding-bottom: 25px;
+  }
+
+  .pageHeader {
+    margin-bottom: 22px;
+  }
+
+  .pageHeader h1 {
+    font-size: 28px;
+  }
+
+  .pageHeader p {
+    font-size: 13px;
+  }
+
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .searchBox,
+  .filterButton,
+  .sortWrapper {
+    width: 100%;
+  }
+
+  .filterButton {
+    justify-content: center;
+  }
+
+  .sortWrapper {
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .imageContainer {
+    height: 240px;
+  }
+
+  .filterPanel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .resetButton {
+    width: 100%;
+  }
+
+  .error {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .error button {
+    padding: 0;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 380px) {
+  .imageContainer {
+    height: 210px;
+  }
+
+  .cardBody {
+    padding: 13px;
+  }
+
+  .conditionBadge,
+  .statusBadge {
+    top: 9px;
+
+    min-height: 25px;
+    padding: 0 8px;
+
+    font-size: 9px;
+  }
+
+  .conditionBadge {
+    left: 9px;
+  }
+
+  .statusBadge {
+    right: 9px;
+  }
+}

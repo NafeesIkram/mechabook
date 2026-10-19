@@ -1,0 +1,329 @@
+.feedToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  background: #101017;
+  border: 1px solid #292933;
+  border-radius: 12px;
+}
+
+.tab,
+.activeTab {
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 16px;
+  background: transparent;
+  color: #92929f;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tab:hover {
+  color: #f5f5f7;
+  background: #181821;
+}
+
+.activeTab {
+  background: #8b5cf6;
+  color: #ffffff;
+}
+
+.filterButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #292933;
+  background: #101017;
+  color: #d8d8df;
+  padding: 9px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.filterButton:hover {
+  background: #181821;
+  border-color: #3a3a47;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 900px;
+}
+
+.postCard {
+  background: #101017;
+  border: 1px solid #292933;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #181821;
+  border: 1px solid #292933;
+  flex-shrink: 0;
+}
+
+.userText {
+  min-width: 0;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.nameRow strong {
+  color: #f5f5f7;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.starBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.handle {
+  display: block;
+  margin-top: 2px;
+  color: #777783;
+  font-size: 12px;
+}
+
+.moreButton {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #858591;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreButton:hover {
+  background: #181821;
+  color: #f5f5f7;
+}
+
+.imageWrapper {
+  width: 100%;
+  background: #08080d;
+  border-top: 1px solid #20202a;
+  border-bottom: 1px solid #20202a;
+}
+
+.postImage {
+  display: block;
+  width: 100%;
+  max-height: 620px;
+  object-fit: cover;
+}
+
+.postContent {
+  padding: 16px 18px 18px;
+}
+
+.caption {
+  margin: 0 0 12px;
+  color: #e9e9ee;
+  font-size: 14px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.keyboardTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  color: #b9a3ff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.tags span {
+  color: #8f8f9b;
+  font-size: 12px;
+}
+
+.postActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-top: 14px;
+  margin-top: 14px;
+  border-top: 1px solid #24242d;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #858591;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.actionButton:hover {
+  background: #181821;
+  color: #f5f5f7;
+}
+
+.state {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px 20px;
+  background: #101017;
+  border: 1px solid #292933;
+  border-radius: 16px;
+  color: #92929f;
+  text-align: center;
+}
+
+.state p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.emptyIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181821;
+  color: #8b5cf6;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #292933;
+  border-top-color: #8b5cf6;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .feedToolbar {
+    align-items: stretch;
+  }
+
+  .tabs {
+    flex: 1;
+  }
+
+  .tab,
+  .activeTab {
+    flex: 1;
+    padding: 9px 10px;
+  }
+
+  .filterButton {
+    padding: 9px 11px;
+  }
+
+  .feed {
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .feedToolbar {
+    gap: 8px;
+  }
+
+  .filterButton {
+    font-size: 0;
+    width: 40px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .postHeader {
+    padding: 14px;
+  }
+
+  .postContent {
+    padding: 14px;
+  }
+
+  .postActions {
+    overflow-x: auto;
+  }
+
+  .actionButton {
+    white-space: nowrap;
+  }
+}

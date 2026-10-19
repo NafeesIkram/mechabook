@@ -1,0 +1,5 @@
+'use client';
+import Link from 'next/link'; import {usePathname} from 'next/navigation';
+import {Home,Compass,ShoppingBag,Users,MessageCircle,Keyboard,ToggleRight,UserRound,Settings,Plus} from 'lucide-react';
+const links=[['/','Home',Home],['/explore','Explore',Compass],['/keyboards','Keyboards',Keyboard],['/switches','Switches',ToggleRight],['/marketplace','Buy & Sell',ShoppingBag],['/community','Community',Users],['/messages','Messages',MessageCircle],['/profile','My Profile',UserRound]] as const;
+export function Sidebar(){const p=usePathname();return <aside className="sidebar"><div className="brand"><span className="logo">M</span>Mechabook</div><nav className="nav">{links.map(([href,label,Icon])=><Link key={href} href={href} className={p===href?'active':''}><Icon size={18}/>{label}</Link>)}<Link href="/ads"><Plus size={18}/>Promote</Link></nav><div className="sidebarBottom"><div className="profileMini"><div className="avatar">YO</div><div><strong style={{fontSize:13}}>Your Account</strong><div className="muted">@you</div></div><Settings size={16} style={{marginLeft:'auto',color:'#777'}}/></div></div></aside>}

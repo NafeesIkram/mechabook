@@ -1,0 +1,971 @@
+.page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  border: none;
+  background: transparent;
+
+  color: #9ca3af;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 8px 0;
+
+  margin-bottom: 24px;
+}
+
+.backButton:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  display: grid;
+
+  grid-template-columns:
+    330px 1fr;
+
+  gap: 32px;
+
+  margin-bottom: 20px;
+}
+
+.heroImage {
+  min-height: 330px;
+
+  border: 1px solid #252832;
+  border-radius: 20px;
+
+  background: #111318;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.heroCustomImage {
+  width: 100%;
+  height: 100%;
+
+  min-height: 330px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   SWITCH VISUAL
+========================================================= */
+
+.switchVisual {
+  width: 150px;
+  height: 190px;
+
+  position: relative;
+}
+
+.switchTop {
+  position: absolute;
+
+  top: 20px;
+  left: 15px;
+
+  width: 120px;
+  height: 90px;
+
+  border-radius: 12px;
+
+  background: #272b35;
+
+  border: 2px solid #414756;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.cross {
+  width: 38px;
+  height: 38px;
+
+  position: relative;
+}
+
+.cross::before,
+.cross::after {
+  content: "";
+
+  position: absolute;
+
+  background: #a78bfa;
+
+  border-radius: 3px;
+}
+
+.cross::before {
+  width: 38px;
+  height: 12px;
+
+  top: 13px;
+  left: 0;
+}
+
+.cross::after {
+  width: 12px;
+  height: 38px;
+
+  top: 0;
+  left: 13px;
+}
+
+.switchBottom {
+  position: absolute;
+
+  left: 0;
+  bottom: 15px;
+
+  width: 150px;
+  height: 80px;
+
+  border-radius: 12px;
+
+  background: #181b22;
+
+  border: 2px solid #343946;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.heroContent {
+  padding: 20px 0;
+}
+
+.brand {
+  margin: 0 0 8px;
+
+  color: #a78bfa;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.heroContent h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 38px;
+
+  line-height: 1.1;
+}
+
+.badges {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 15px;
+}
+
+.typeBadge,
+.soundBadge {
+  display: inline-flex;
+
+  align-items: center;
+
+  min-height: 30px;
+
+  padding: 0 11px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.typeBadge {
+  background:
+    rgba(
+      167,
+      139,
+      250,
+      0.12
+    );
+
+  color: #b69cff;
+}
+
+.soundBadge {
+  background: #191c23;
+
+  border: 1px solid #2c303a;
+
+  color: #b5bbc6;
+}
+
+.rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 18px;
+
+  color: #a78bfa;
+}
+
+.rating strong {
+  color: #ffffff;
+
+  font-size: 15px;
+}
+
+.rating span {
+  color: #747b88;
+
+  font-size: 13px;
+}
+
+.description {
+  max-width: 650px;
+
+  margin: 18px 0 0;
+
+  color: #9ca3af;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.primaryButton,
+.secondaryButton {
+  min-height: 42px;
+
+  border-radius: 10px;
+
+  padding: 0 15px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.primaryButton {
+  border: 1px solid #a78bfa;
+
+  background: #a78bfa;
+
+  color: #111318;
+}
+
+.primaryButton:hover {
+  background: #b69cff;
+}
+
+.secondaryButton {
+  border: 1px solid #2d323d;
+
+  background: #171a21;
+
+  color: #d1d5db;
+}
+
+.secondaryButton:hover {
+  background: #1c2028;
+
+  border-color: #454b58;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+  background: #111318;
+
+  border: 1px solid #252832;
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  margin-top: 16px;
+}
+
+.sectionHeader {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 19px;
+}
+
+.sectionHeader p {
+  margin: 5px 0 0;
+
+  color: #777f8c;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   SPECIFICATIONS
+========================================================= */
+
+.specGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 10px;
+}
+
+.spec {
+  padding: 15px;
+
+  border: 1px solid #292e38;
+
+  border-radius: 11px;
+
+  background: #0d0f13;
+}
+
+.spec span {
+  display: block;
+
+  color: #707784;
+
+  font-size: 11px;
+
+  margin-bottom: 7px;
+}
+
+.spec strong {
+  color: #e5e7eb;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   SOUND PROFILE
+========================================================= */
+
+.soundProfile {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.profileRow {
+  display: grid;
+
+  grid-template-columns:
+    75px 1fr 42px;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.profileRow > span {
+  color: #a4aab5;
+
+  font-size: 12px;
+}
+
+.profileRow > strong {
+  color: #b69cff;
+
+  font-size: 12px;
+
+  text-align: right;
+}
+
+.profileBar {
+  height: 8px;
+
+  border-radius: 99px;
+
+  background: #252a33;
+
+  overflow: hidden;
+}
+
+.profileFill {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #a78bfa;
+}
+
+
+/* =========================================================
+   SOUND TESTS
+========================================================= */
+
+.soundList {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.soundItem {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 13px;
+
+  border: 1px solid #292e38;
+
+  border-radius: 12px;
+
+  background: #15171d;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+
+  background: #28233f;
+
+  color: #b69cff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.soundInfo {
+  min-width: 0;
+
+  flex: 1;
+}
+
+.soundInfo strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+.soundInfo span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #d2d6de;
+
+  font-size: 12px;
+}
+
+.soundInfo small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #727987;
+
+  font-size: 11px;
+}
+
+.soundActions {
+  margin-left: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.audioPlayer {
+  width: 190px;
+
+  height: 34px;
+}
+
+.playButton,
+.videoButton {
+  min-height: 36px;
+
+  border-radius: 9px;
+
+  padding: 0 11px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.playButton {
+  border: 1px solid #2d323d;
+
+  background: #111318;
+
+  color: #e5e7eb;
+}
+
+.playButton:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+.videoButton {
+  border: 1px solid
+    rgba(
+      167,
+      139,
+      250,
+      0.35
+    );
+
+  background:
+    rgba(
+      167,
+      139,
+      250,
+      0.08
+    );
+
+  color: #b69cff;
+
+  text-decoration: none;
+}
+
+.videoButton:hover {
+  background:
+    rgba(
+      167,
+      139,
+      250,
+      0.14
+    );
+}
+
+
+/* =========================================================
+   ERROR / SUCCESS
+========================================================= */
+
+.errorText {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #ef858f;
+
+  font-size: 11px;
+}
+
+.successText {
+  color: #8ee0ad;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   REVIEWS
+========================================================= */
+
+.reviews {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.review {
+  display: flex;
+
+  gap: 12px;
+
+  padding: 16px;
+
+  border: 1px solid #292e38;
+
+  border-radius: 12px;
+
+  background: #0d0f13;
+}
+
+.reviewAvatar {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: #252039;
+
+  color: #b69cff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  flex-shrink: 0;
+}
+
+.review strong {
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+.reviewRating {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  margin-left: 8px;
+
+  color: #a78bfa;
+
+  font-size: 12px;
+}
+
+.review p {
+  margin: 7px 0 0;
+
+  color: #949ba8;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   REVIEW FORM
+========================================================= */
+
+.reviewForm {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.starPicker {
+  display: flex;
+
+  align-items: center;
+
+  gap: 3px;
+}
+
+.starButton {
+  padding: 2px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #777f8c;
+
+  cursor: pointer;
+}
+
+.starButton:hover {
+  color: #a78bfa;
+}
+
+.reviewForm textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  border: 1px solid #292e38;
+
+  border-radius: 10px;
+
+  background: #0d0f13;
+
+  color: #ffffff;
+
+  outline: none;
+
+  resize: vertical;
+
+  font-size: 13px;
+}
+
+.reviewForm textarea:focus {
+  border-color: #8b5cf6;
+}
+
+.reviewForm .primaryButton {
+  align-self: flex-start;
+}
+
+
+/* =========================================================
+   CONTRIBUTION
+========================================================= */
+
+.contribution {
+  margin-top: 16px;
+
+  padding: 24px;
+
+  border: 1px solid #2d2a40;
+
+  border-radius: 16px;
+
+  background: #121019;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.contribution h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 18px;
+}
+
+.contribution p {
+  margin: 6px 0 0;
+
+  color: #858c98;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   NOT FOUND
+========================================================= */
+
+.notFound {
+  max-width: 700px;
+
+  margin: 80px auto;
+
+  text-align: center;
+}
+
+.notFound h1 {
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heroImage {
+    min-height: 260px;
+  }
+
+  .heroCustomImage {
+    min-height: 260px;
+  }
+
+  .heroContent h1 {
+    font-size: 32px;
+  }
+
+  .specGrid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 18px;
+  }
+
+  .sectionHeader {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .soundItem {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  .soundActions {
+    width: 100%;
+
+    margin-left: 53px;
+
+    justify-content: flex-start;
+  }
+
+  .audioPlayer {
+    width: 100%;
+
+    max-width: 280px;
+  }
+
+  .contribution {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .reviewForm .primaryButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroContent h1 {
+    font-size: 27px;
+  }
+
+  .specGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+
+  .soundActions {
+    margin-left: 0;
+  }
+
+  .profileRow {
+    grid-template-columns:
+      65px 1fr 40px;
+
+    gap: 9px;
+  }
+}
